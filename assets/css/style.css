@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-1: #7478A8;
+    --color-2: #6B728E;
+    --color-3: #50577A;
+    --color-4: #404258;
+    --color-5: #2F2E41;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+
+    transition: transform 0.2s;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+header {
+    background-color: var(--color-5);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 70px;
+}
+
+header img {
+    height: 50px;
+}
+
+header img:hover {
+    transform: scale(1.15);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+nav a#stark {
+    color: var(--color-5);
+
+    background-color: white;
+    border-radius: 12px;
+
+    padding: 4px 9px;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.who-is-wesley {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 400px;
+    gap: 20px;
+    padding: 30px;
+}
+
+.who-is-wesley section {
+    background-color: var(--color-3);
+    border-radius: 8px;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 18px;
+}
+
+.who-is-wesley img {
+    border-radius: 15px;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.5);
+
+    height: 300px;
+}
+
+.who-is-wesley img:hover {
+    transform: scale(1.03);
+}
+
+.who-is-wesley h1 {
+    background-color: var(--color-4);
+    border-radius: 8px;
+    padding: 7px 24px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.who-is-wesley p {
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    text-align: justify;
+    text-decoration: none;
+
+    max-width: 560px;
+}
+
+.who-is-wesley aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-top: 15px;
+}
+
+.who-is-wesley aside a {
+    background-color: var(--color-5);
+    border-radius: 12px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    padding: 6px 20px;
+}
+
+.who-is-wesley aside p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: bold;
+}
+
+.who-is-wesley aside img {
+    border-radius: 0px;
+    box-shadow: none;
+
+    height: 20px;
+}
+
+.who-is-wesley aside a:hover {
+    transform: scale(1.03);
+}
+
+.my-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 35px;
+}
+
+.my-projects h1 {
+    background-color: var(--color-4);
+    padding: 5px 15%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.my-projects p {
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.my-projects section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.my-projects section div {
+    background-color: var(--color-3);
+    border-radius: 8px;
+    padding: 0px 5px;
+    box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 370px;
+    width: 300px;
+}
+
+.my-projects section img {
+    margin-top: 10px;
+    max-height: 180px;
+}
+
+.my-projects section img:hover {
+    transform: scale(1.03);
+}
+
+.my-projects section h2 {
+    margin-top: 4px;
+
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.my-projects section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+    margin-bottom: 9px;
+}
+
+.my-projects section span {
+    background-color: var(--color-2);
+    border-radius: 16px;
+    width: 180px;
+    margin-bottom: 6px;
+    padding: 5px 0px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+
+    text-align: center;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.my-projects section span:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    background-color: var(--color-5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+}
+
+footer>p {
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 400px) {
+    header {
+        height: 50px;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    nav a#stark {
+        padding: 1px 6px;
+    }
+}
+
+main>div {
+    color: white;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    text-align: center;
+    background-color: red;
+
+    margin-bottom: 20px;
+}
