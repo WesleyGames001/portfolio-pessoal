@@ -82,6 +82,17 @@ nav a:hover {
     padding: 30px;
 }
 
+.who-is-wesley img {
+    border-radius: 15px;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.5);
+
+    height: 320px;
+}
+
+.who-is-wesley img:hover {
+    transform: scale(1.03);
+}
+
 .who-is-wesley section {
     background-color: var(--color-3);
     border-radius: 8px;
@@ -95,18 +106,7 @@ nav a:hover {
     padding: 18px;
 }
 
-.who-is-wesley img {
-    border-radius: 15px;
-    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.5);
-
-    height: 300px;
-}
-
-.who-is-wesley img:hover {
-    transform: scale(1.03);
-}
-
-.who-is-wesley h1 {
+.who-is-wesley section h1 {
     background-color: var(--color-4);
     border-radius: 8px;
     padding: 7px 24px;
@@ -122,7 +122,7 @@ nav a:hover {
     white-space: nowrap;
 }
 
-.who-is-wesley p {
+.who-is-wesley section p {
     color: white;
 
     font-family: 'Open Sans', sans-serif;
@@ -135,7 +135,7 @@ nav a:hover {
     max-width: 560px;
 }
 
-.who-is-wesley aside {
+.who-is-wesley section aside {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -146,7 +146,7 @@ nav a:hover {
     margin-top: 15px;
 }
 
-.who-is-wesley aside a {
+.who-is-wesley section aside a {
     background-color: var(--color-5);
     border-radius: 12px;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
@@ -161,28 +161,28 @@ nav a:hover {
     padding: 6px 20px;
 }
 
-.who-is-wesley aside p {
+.who-is-wesley section aside p {
     font-family: 'Open Sans', sans-serif;
     font-size: 13.5px;
     font-weight: bold;
 }
 
-.who-is-wesley aside img {
+.who-is-wesley section aside img {
     border-radius: 0px;
     box-shadow: none;
 
     height: 20px;
 }
 
-.who-is-wesley aside a:hover {
+.who-is-wesley section aside a:hover {
     transform: scale(1.03);
 }
 
 .my-projects {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     padding-bottom: 35px;
 }
@@ -191,7 +191,7 @@ nav a:hover {
     background-color: var(--color-4);
     padding: 5px 15%;
     border-radius: 16px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 
     color: white;
 
@@ -200,7 +200,15 @@ nav a:hover {
     font-weight: bold;
 }
 
-.my-projects p {
+.my-projects div {
+    background-color: var(--color-3);
+
+    margin-top: 15px;
+}
+
+.my-projects div p {
+    padding: 10px;
+
     color: white;
 
     font-family: 'Open Sans', sans-serif;
@@ -209,7 +217,6 @@ nav a:hover {
 
     text-align: center;
 
-    margin: 20px;
     max-width: 900px;
 }
 
@@ -218,14 +225,15 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    
+    gap: 20px;
 }
 
 .my-projects section div {
     background-color: var(--color-3);
-    border-radius: 8px;
-    padding: 0px 5px;
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 8px;
 
     display: flex;
     flex-direction: column;
@@ -261,6 +269,7 @@ nav a:hover {
     font-size: 12px;
     font-weight: normal;
 
+    padding: 0px;
     margin: 0px 0px 9px 0px;
 }
 
