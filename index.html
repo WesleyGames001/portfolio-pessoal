@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <img src="assets/images/logo-500x300.png" alt="Logo oficial de Wesley Ramos">
 
         <nav>
@@ -70,9 +70,12 @@
 
         <article id="projects">
             <h1>MEUS PROJETOS</h1>
-            
+
             <p>
-                Até o momento, minhas experiências de projetos foram principalmente em servidores de Minecraft. Eu mesmo desenvolvi a maioria dos sistemas usados nesses servidores, o que permitiu que eles atendessem a um público de 60 a 120 jogadores em média. Isso me deu uma ampla gama de conhecimento e habilidades na criação e manutenção de servidores e sistemas relacionados.
+                Até o momento, minhas experiências de projetos foram principalmente em servidores de Minecraft. Eu mesmo
+                desenvolvi a maioria dos sistemas usados nesses servidores, o que permitiu que eles atendessem a um
+                público de 60 a 120 jogadores em média. Isso me deu uma ampla gama de conhecimento e habilidades na
+                criação e manutenção de servidores e sistemas relacionados.
             </p>
 
             <div>
@@ -82,8 +85,7 @@
                     <h2>InvyctusMC</h2>
                     <p>(2017-2018)</p>
 
-                    <span>Fundador</span>
-                    <span>Diretor Executivo</span>
+                    <span>Fundador & CTO</span>
                     <span>Desenvolvedor Chefe</span>
 
                     <p><br>Clique para saber mais</p>
@@ -95,7 +97,7 @@
                     <h2>SmeltingMC</h2>
                     <p>(2019)</p>
 
-                    <span>Diretor de Tecnologias</span>
+                    <span>CTO</span>
                     <span>Desenvolvedor Chefe</span>
                     <span>Gerente de Projeto</span>
 
@@ -105,12 +107,31 @@
         </article>
 
         <article id="projects-show-more">
-            <div>
-                <h2>teste</h2>
-                <h2>teste</h2>
-                <h2>teste</h2>
-                <h2>teste</h2>
-            </div>
+            <section>
+                <nav>
+                    <div>
+                        <img id="project-image" alt="Logo do Projeto">
+                        <span id="project-name"></span>
+                    </div>
+
+                    <button onclick="closeProject();">FECHAR</button>
+                </nav>
+
+                <article id="project-description">
+                </article>
+
+                <div>
+                    <div id="project-informations">
+                    </div>
+
+                    <div id="project-videos">
+                        <iframe id="project-video" width="500" height="281.25" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
         </article>
     </main>
 
@@ -118,7 +139,7 @@
         <p>&copy; Wesley Ramos, todos os direitos reservados.</p>
     </footer>
 
-    <script src="assets/js/MyProjects.js"></script>
+    <script src="assets/js/projects.js"></script>
 </body>
 
 </html>
