@@ -87,7 +87,7 @@ header nav a:hover {
     overflow: hidden;
 
     gap: 25px;
-    margin-top: 25px;
+    margin: 25px 0px;
 }
 
 #about-me img {
@@ -190,8 +190,6 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-
-    margin-top: 25px;
 }
 
 #projects>h1 {
@@ -224,8 +222,8 @@ header nav a:hover {
 
     gap: 25px;
 
-    max-width: 1000px;
     margin-bottom: 25px;
+    max-width: 1000px;
 }
 
 #projects section {
@@ -396,6 +394,12 @@ header nav a:hover {
     max-width: 100%;
 }
 
+/* CONTATO */
+
+#contacts {
+    
+}
+
 /* RODAPÉ */
 
 footer {
@@ -408,6 +412,7 @@ footer {
     font-size: 14px;
     font-weight: medium;
 
+    margin-top: 25px;
     min-height: 40px;
 }
 
