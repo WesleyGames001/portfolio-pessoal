@@ -1,7 +1,7 @@
 const data = {
     invyctusmc: {
         name: "InvyctusMC",
-        image: "assets/images/invyctus-300x300.png",
+        image: "../assets/images/invyctus-300x300.png",
         video: "https://www.youtube.com/embed/yyNuRP_Demk",
 
         description: [
@@ -35,7 +35,7 @@ const data = {
 
     smeltingmc: {
         name: "SmeltingMC",
-        image: "assets/images/smelting-300x300.png",
+        image: "../assets/images/smelting-300x300.png",
         video: "https://www.youtube.com/embed/-Q1bT6M3v9E",
 
         description: [
