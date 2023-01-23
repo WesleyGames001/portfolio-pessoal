@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Página inicial - Wesley Ramos</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -16,16 +17,19 @@
         <img src="assets/images/logo-500x300.png" alt="Logo oficial de Wesley Ramos">
 
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+            <a href="#about-me">Início</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
             <a href="https://stark.wesleyramos.tk/" id="stark">Stark</a>
         </nav>
     </header>
 
     <main>
-        <article class="who-is-wesley">
-            <img src="assets/images/wesley-1282x1920.jpg" alt="Foto de Wesley">
+        <article id="about-me">
+            <picture>
+                <source media="(max-width: 880px)" srcset="assets/images/wesley-1280x853.jpg">
+                <img src="assets/images/wesley-1282x1920.jpg" alt="Foto de Wesley">
+            </picture>
 
             <section>
                 <h1>QUEM SOU EU?</h1>
@@ -64,47 +68,57 @@
             </section>
         </article>
 
-        <article class="my-projects">
+        <article id="projects">
             <h1>MEUS PROJETOS</h1>
             
-            <div>
-                <p>Até o momento, minhas experiências de projetos foram principalmente em servidores de Minecraft. Eu mesmo desenvolvi a maioria dos sistemas usados nesses servidores, o que permitiu que eles atendessem a um público de 60 a 120 jogadores em média. Isso me deu uma ampla gama de conhecimento e habilidades na criação e manutenção de servidores e sistemas relacionados.</p>
-            </div>
+            <p>
+                Até o momento, minhas experiências de projetos foram principalmente em servidores de Minecraft. Eu mesmo desenvolvi a maioria dos sistemas usados nesses servidores, o que permitiu que eles atendessem a um público de 60 a 120 jogadores em média. Isso me deu uma ampla gama de conhecimento e habilidades na criação e manutenção de servidores e sistemas relacionados.
+            </p>
 
-            <section>
-                <div>
+            <div>
+                <section id="invyctusmc" onclick="updateProject(this.id)">
                     <img src="assets/images/invyctus-300x300.png" alt="Logo de SmeltingMC">
 
                     <h2>InvyctusMC</h2>
-                    <p>(2017)</p>
+                    <p>(2017-2018)</p>
 
                     <span>Fundador</span>
                     <span>Diretor Executivo</span>
                     <span>Desenvolvedor Chefe</span>
-                </div>
 
-                <div>
+                    <p><br>Clique para saber mais</p>
+                </section>
+
+                <section id="smeltingmc" onclick="updateProject(this.id)">
                     <img src="assets/images/smelting-300x300.png" alt="Logo de SmeltingMC">
 
                     <h2>SmeltingMC</h2>
-                    <p>(2018)</p>
+                    <p>(2019)</p>
 
                     <span>Diretor de Tecnologias</span>
                     <span>Desenvolvedor Chefe</span>
                     <span>Gerente de Projeto</span>
-                </div>
-            </section>
+
+                    <p><br>Clique para saber mais</p>
+                </section>
+            </div>
         </article>
 
-        <div>
-            <h2>&#128296; Esse site ainda está em fase de desenvolvimento!</h2>
-            <p>Atualizações são constantes e podem ocorrer a qualquer momento.</p>
-        </div>
+        <article id="projects-show-more">
+            <div>
+                <h2>teste</h2>
+                <h2>teste</h2>
+                <h2>teste</h2>
+                <h2>teste</h2>
+            </div>
+        </article>
     </main>
 
     <footer>
         <p>&copy; Wesley Ramos, todos os direitos reservados.</p>
     </footer>
+
+    <script src="assets/js/MyProjects.js"></script>
 </body>
 
 </html>

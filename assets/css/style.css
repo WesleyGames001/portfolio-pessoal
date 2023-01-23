@@ -1,39 +1,50 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+/* CONFIGURAÇÕES GERAIS DO SITE */
 
 :root {
-    --color-1: #7478A8;
-    --color-2: #6B728E;
-    --color-3: #50577A;
-    --color-4: #404258;
-    --color-5: #2F2E41;
+    --color-background: #7478A8;
+
+    --color-1: #50577A;
+    --color-2: #404258;
+    --color-3: #2F2E41;
 }
 
 * {
     padding: 0px;
     margin: 0px;
 
-    transition: transform 0.2s;
+    color: white;
 }
 
 body {
-    background-color: var(--color-1);
+    background-color: var(--color-background);
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: medium;
 }
 
+/* CABEÇALHO */
+
 header {
-    background-color: var(--color-5);
+    display: flex;
+
+    background-color: var(--color-3);
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
 
-    display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
 
-    height: 70px;
+    padding: 0px 20px;
+    min-height: 50px;
 }
 
 header img {
-    height: 50px;
+    padding: 10px 5px;
+    max-height: 45px;
 }
 
 header img:hover {
@@ -42,15 +53,12 @@ header img:hover {
 
 nav {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 14px;
 }
 
 nav a {
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
 
     white-space: nowrap;
@@ -58,12 +66,11 @@ nav a {
 }
 
 nav a#stark {
-    color: var(--color-5);
+    color: black;
 
     background-color: white;
-    border-radius: 12px;
-
     padding: 4px 9px;
+    border-radius: 8px;
 }
 
 nav a:hover {
@@ -71,83 +78,79 @@ nav a:hover {
     text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
-.who-is-wesley {
+/* SOBRE MIM */
+
+#about-me {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    overflow: hidden;
 
-    min-height: 400px;
-    gap: 20px;
-    padding: 30px;
+    gap: 25px;
+    margin-top: 25px;
 }
 
-.who-is-wesley img {
+#about-me img {
     border-radius: 15px;
     box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.5);
 
-    height: 320px;
+    max-height: 380px;
+    max-width: 480px;
 }
 
-.who-is-wesley img:hover {
+#about-me img:hover {
     transform: scale(1.03);
 }
 
-.who-is-wesley section {
-    background-color: var(--color-3);
-    border-radius: 8px;
+#about-me section {
+    background-color: var(--color-1);
+
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 18px;
+    margin: 4px 15px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    padding: 18px;
 }
 
-.who-is-wesley section h1 {
-    background-color: var(--color-4);
-    border-radius: 8px;
-    padding: 7px 24px;
-    margin-bottom: 15px;
+#about-me section h1 {
+    background-color: var(--color-2);
+
+    border-radius: 12px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 7px 40px;
+    margin-bottom: 10px;
 
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
 
     white-space: nowrap;
 }
 
-.who-is-wesley section p {
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
+#about-me section p {
     font-size: 15px;
-    font-weight: 500;
-
     text-align: justify;
-    text-decoration: none;
 
-    max-width: 560px;
+    max-width: 640px;
 }
 
-.who-is-wesley section aside {
+#about-me section aside {
     display: flex;
+
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 
-    gap: 30px;
-
+    gap: 10px 30px;
     margin-top: 15px;
 }
 
-.who-is-wesley section aside a {
-    background-color: var(--color-5);
+#about-me section aside a {
+    background-color: var(--color-3);
     border-radius: 12px;
     box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
 
@@ -161,202 +164,198 @@ nav a:hover {
     padding: 6px 20px;
 }
 
-.who-is-wesley section aside p {
+#about-me section aside p {
     font-family: 'Open Sans', sans-serif;
     font-size: 13.5px;
     font-weight: bold;
 }
 
-.who-is-wesley section aside img {
+#about-me section aside img {
     border-radius: 0px;
     box-shadow: none;
 
     height: 20px;
 }
 
-.who-is-wesley section aside a:hover {
+#about-me section aside a:hover {
     transform: scale(1.03);
 }
 
-.my-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* MEUS PROJETOS */
 
-    padding-bottom: 35px;
+#projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+    margin-top: 25px;
 }
 
-.my-projects h1 {
-    background-color: var(--color-4);
-    padding: 5px 15%;
-    border-radius: 16px;
+#projects>h1 {
+    background-color: var(--color-2);
+    border-radius: 8px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+    padding: 5px 15%;
 
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: bold;
 }
 
-.my-projects div {
-    background-color: var(--color-3);
-
-    margin-top: 15px;
-}
-
-.my-projects div p {
+#projects>p {
+    background-color: var(--color-1);
     padding: 10px;
+    margin: 15px 0px;
+    max-width: 900px;
 
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: normal;
 
     text-align: center;
-
-    max-width: 900px;
 }
 
-.my-projects section {
+#projects div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
-    gap: 20px;
+
+    gap: 25px;
+
+    max-width: 1000px;
+    margin-bottom: 25px;
 }
 
-.my-projects section div {
-    background-color: var(--color-3);
+#projects section {
+    background-color: var(--color-1);
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.5);
-    padding: 2px 5px;
     border-radius: 8px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    height: 370px;
-    width: 300px;
+    padding: 10px 60px;
 }
 
-.my-projects section img {
+#projects section:hover {
+    transform: scale(1.03);
+}
+
+#projects section img {
     margin-top: 10px;
     max-height: 180px;
 }
 
-.my-projects section img:hover {
+#projects section img:hover {
     transform: scale(1.03);
 }
 
-.my-projects section h2 {
+#projects section h2 {
     margin-top: 4px;
 
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
 
     text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
-.my-projects section p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: normal;
+#projects section p {
+    color: antiquewhite;
 
-    padding: 0px;
+    font-size: 12px;
+
     margin: 0px 0px 9px 0px;
 }
 
-.my-projects section span {
+#projects section span {
     background-color: var(--color-2);
     border-radius: 16px;
-    width: 180px;
-    margin-bottom: 6px;
-    padding: 5px 0px;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 8px;
+    width: 180px;
+    padding: 5px 0px;
 
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 600;
 
     text-align: center;
-    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.my-projects section span:hover {
+#projects section span:hover {
     transform: scale(1.03);
 }
 
+/* MEUS PROJETOS - SABER MAIS */
+
+#projects-show-more {
+    height: 100%;
+    width: 100%;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 99;
+    position: fixed;
+
+    top: 0px;
+
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+#projects-show-more div {
+    background-color: var(--color-1);
+
+    height: 80%;
+    width: 70%;
+}
+
+/* RODAPÉ */
+
 footer {
-    background-color: var(--color-5);
+    background-color: var(--color-3);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 40px;
+    font-size: 14px;
+
+    min-height: 40px;
 }
 
-footer>p {
-    color: white;
+/* RESPONSIVIDADE */
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-@media (max-width: 400px) {
-    header {
-        height: 50px;
-    }
-
+@media (max-width: 540px) {
     header img {
         height: 36px;
     }
 
+    #about-me img {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 400px) {
     nav {
-        gap: 8px;
+        gap: 6px;
     }
 
     nav a {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     nav a#stark {
         padding: 1px 6px;
     }
 
-    .my-projects p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 330px) {
-    nav a {
-        font-size: 13.5px;
+    #about-me img {
+        max-width: 260px;
     }
 
-    .my-projects section div {
-        width: 260px;
+    #projects section {
+        padding: 8px 50px;
     }
-}
-
-main>div {
-    color: white;
-
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-
-    text-align: center;
-    background-color: red;
-
-    margin-bottom: 20px;
 }
